@@ -1,0 +1,243 @@
+@charset "utf-8";
+/* CSS Document */
+/** Mobile First **/
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: Verdana, Arial, Helvetica, "sans-serif";
+	line-height: 1.25em;
+	color: #000;
+	background-color: #fff;
+}
+#header-content, #nav-content, #main-content, #footer-content {
+	margin: 15px;	/* Site margins */
+}
+header {
+	border-bottom: 1px solid #ccc;
+}
+#nav-content a, #nav-content a:link, #nav-content a:visited {
+	margin-right: 25px;
+	font-size: 1.35em;
+	color: #144487;
+}
+#nav-content a:hover {
+	color: #A31818;
+	text-decoration: none;
+}
+.pmel-logo, .aoml-logo {
+	width: 100%;
+}
+.pmel-logo img, .aoml-logo img {
+	width: 50%;
+}
+.pmel-logo img {
+	margin-bottom: 15px;
+}
+footer {
+	font-size: 0.875em;
+}
+img {
+	border: 0;
+	width: 100%;
+}
+.clearfix::after { /* Clear floats */
+	content: "";
+	clear: both;
+	display: table;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #000;
+	font-family: 'Frank Ruhl Libre', serif; /* Google font */
+}
+h1 {
+	font-size: 2em;
+	line-height: 1.25em;
+}
+h2 {
+	font-size: 1.6252em;
+	line-height: 1.15384615em;
+}
+h2.blog-date {
+	font-family: Verdana, Arial, Helvetica, "sans-serif";
+	color: #4E4E4E;
+	font-size: 1.5em;
+	line-height: 1.15384615em;
+}
+h3 {
+	font-size: 1.375em;
+	line-height: 1.13636364em;
+}
+h4 {
+	font-size: 1.125em;
+	line-height: 1.11111111em;
+}
+a, a:link, a:visited {
+	color: #006BB5;
+	text-decoration: none;
+}
+a:hover {
+	color: #E2572D;
+	text-decoration: underline;
+}
+.image-caption {
+	font-size: 0.8em;
+	font-style: italic;
+}
+.noaa-logo {
+	width: 80px;
+}
+.footer-pmel, .footer-aoml, .footer-noaa-logo, .footer-general-links {
+	width: 100%;
+}
+.footer-pmel, .footer-aoml {
+	margin-bottom: 15px;
+}
+.footer-noaa-logo, .footer-general-links {
+	text-align: center;
+	margin-bottom: 15px;
+}
+/* https://accessibility.oit.ncsu.edu/it-accessibility-at-nc-state/developers/accessibility-handbook/mouse-and-keyboard-events/skip-to-main-content/ */
+.skip-link {
+	left: -999px;
+	position: absolute;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	z-index: -999;
+}
+a.skip-link:focus, a.skip-link:active {
+	color: #fff;
+	background-color: #000;
+	left: auto;
+	top: auto;
+	width: 30%;
+	height: auto;
+	overflow: auto;
+	margin: 10px 35%;
+	padding: 5px;
+	border-radius: 10px;
+	border: 2px solid #ff0;
+	text-align: center;
+	font-size: 1.2em;
+	z-index: 999;
+}
+/** Tablet **/
+@media screen and (min-width: 576px) {
+	body {
+		line-height: 1.375em;
+	}
+	/* Sticky footer */
+	body {
+		min-height: 100vh;
+    	display: flex;
+    	flex-direction: column;
+	}
+	header, footer, nav {
+  		flex-grow: 0;
+  		flex-shrink: 0;
+ 		flex-basis: auto;
+	}
+	main {
+  		flex-grow: 1;
+ 		flex-shrink: 0;
+  		flex-basis: auto;
+	}
+	/* End Sticky footer */
+	main {
+		margin-bottom: 50px;
+	}
+	main img, .image-caption {
+		width: 75%;
+	}
+	footer {
+		color: #ccc;
+		background-color: #080808;
+		border-top: 3px solid #e2572d;
+	}
+	footer a, footer a:link, footer a:visited {
+		color: #ABDEFF;
+	}
+	footer a:hover {
+		color: #fff;
+	}
+	h1 {
+		font-size: 2.5em;
+		line-height: 1.125 em;
+	}
+	h2 {
+		font-size: 2em;
+		line-height: 1.25em;
+	}
+	h2.blog-date {
+		font-size: 1.8em;
+		line-height: 1.25em;
+	}
+	h3 {
+		font-size: 1.5em;
+		line-height: 1.25em;
+	}
+	h4 {
+		font-size: 1.125em;
+		line-height: 1.22222222em;
+	}
+	.pmel-logo, .aoml-logo {
+		display: block;
+	}
+	.pmel-logo img {
+		width: 200px;
+		float: left;
+	}
+	.aoml-logo img {
+		width: 260px;
+		float: right;
+	}
+	.footer-pmel {
+		width: 46%;
+		float: left;
+	}
+	.footer-aoml {
+		width: 53%;
+		float: right;
+	}
+	.footer-lab-info {
+		margin-bottom: 15px;
+	}
+}
+/** Desktop **/
+@media screen and (min-width: 960px) {
+	header {
+		margin-top: 20px;
+	}
+	#header-content, #main-content, #nav-content, #footer-content {
+		width: 960px; /* Content width */
+		margin: 0 auto;
+	}
+	#nav-content {
+		margin-top: 15px;
+	}
+	h1 {
+		font-size: 3em;
+		line-height: 1.05 em;
+	}
+	h2 {
+		font-size: 2.25em;
+		line-height: 1.25em;
+	}
+	h2.blog-date {
+		font-size: 1.9em;
+		line-height: 1.25em;
+	}
+	h3 {
+		font-size: 1.75em;
+		line-height: 1.25em;
+	}
+	#main-content p img, .image-caption {	/* Center images: https://www.w3.org/Style/Examples/007/center.en.html */
+		display: block;
+    	margin: 0 auto;
+	}
+	.footer-lab-info {
+		margin-top: 25px;
+	}
+}

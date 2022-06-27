@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.pmel.noaa.gov/saildrone-hurricane/</loc>
+  <lastmod>2022-06-16T20:26:01+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.pmel.noaa.gov/saildrone-hurricane/index.html</loc>
+  <lastmod>2022-06-16T20:26:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.pmel.noaa.gov/saildrone-hurricane/2022/index.html</loc>
+  <lastmod>2022-06-16T20:18:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.pmel.noaa.gov/saildrone-hurricane/2021/index.html</loc>
+  <lastmod>2022-06-16T20:22:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.pmel.noaa.gov/saildrone-hurricane/2021/mission-blog-2021.html</loc>
+  <lastmod>2022-06-16T21:12:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.pmel.noaa.gov/saildrone-hurricane/2021/</loc>
+  <lastmod>2022-06-16T20:22:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
