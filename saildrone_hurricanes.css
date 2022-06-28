@@ -41,6 +41,10 @@ img {
 	border: 0;
 	width: 100%;
 }
+iframe{
+	border: 0;
+	width: 100%;
+}
 .clearfix::after { /* Clear floats */
 	content: "";
 	clear: both;
@@ -53,6 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	font-size: 2em;
 	line-height: 1.25em;
+	text-align: center;
 }
 h2 {
 	font-size: 1.6252em;
@@ -123,6 +128,28 @@ a.skip-link:focus, a.skip-link:active {
 	font-size: 1.2em;
 	z-index: 999;
 }
+
+.last{
+	border-bottom: none;
+}
+td{
+	width: 40%;
+	padding: 7px 0px;
+	border-bottom: thin solid;
+}
+td .text-container{
+	margin: auto;
+}
+
+td img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.dropbtn{
+	display: none;
+}
+
 /** Tablet **/
 @media screen and (min-width: 576px) {
 	body {
@@ -151,6 +178,7 @@ a.skip-link:focus, a.skip-link:active {
 	main img, .image-caption {
 		width: 75%;
 	}
+	
 	footer {
 		color: #ccc;
 		background-color: #080808;
@@ -204,6 +232,22 @@ a.skip-link:focus, a.skip-link:active {
 	.footer-lab-info {
 		margin-bottom: 15px;
 	}
+	#main-content p img, .image-caption {	/* Center images: https://www.w3.org/Style/Examples/007/center.en.html */
+		display: block;
+    	margin: 0 auto;
+	}
+	
+	table{
+		margin: auto;
+		width: 100%;
+	}
+	td{
+	width: 30%;
+	padding: 14px 10px;
+}
+
+	
+	
 }
 /** Desktop **/
 @media screen and (min-width: 960px) {
@@ -233,11 +277,53 @@ a.skip-link:focus, a.skip-link:active {
 		font-size: 1.75em;
 		line-height: 1.25em;
 	}
-	#main-content p img, .image-caption {	/* Center images: https://www.w3.org/Style/Examples/007/center.en.html */
-		display: block;
-    	margin: 0 auto;
-	}
+	
 	.footer-lab-info {
 		margin-top: 25px;
+	}
+	
+	#diagram{
+		width: 60%;
+	}
+	
+	td{
+	width: 20%;
+	padding: 20px 10px;
+}
+	
+	.dropbtn {
+	  display: inline-block;
+    color: white;
+    border: none;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255,255,255);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+	
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+	.logo-container{
+		width: 150px;
+		display: inline-block;
+	}
+	.logo-container img{
+		display: block;
+		margin: auto;
 	}
 }
