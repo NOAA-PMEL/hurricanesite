@@ -10,6 +10,7 @@ body {
 	color: #000;
 	background-color: #fff;
 }
+
 #header-content, #nav-content, #main-content, #footer-content {
 	margin: 15px;	/* Site margins */
 }
@@ -34,6 +35,7 @@ header {
 .pmel-logo img {
 	margin-bottom: 15px;
 }
+
 footer {
 	font-size: 0.875em;
 }
@@ -298,22 +300,23 @@ td img{
   }
   .dropdown {
     position: relative;
-    display: inline-block;
+    display: inline-block; 
   }
   .dropdown-content {
     display: none;
     position: absolute;
     background-color: rgb(255,255,255);
-    min-width: 160px;
+    min-width: 150px; 
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+	  
   }
   .dropdown-content a {
     color: black;
-    padding: 12px 16px;
-	
+    padding: 12px 0px 12px 12px;
     text-decoration: none;
-    display: block;
+    display: inline-block;
+	  
   }
   .dropdown:hover .dropdown-content {
     display: block;
