@@ -14,6 +14,8 @@ body {
 #header-content, #nav-content, #main-content, #footer-content {
 	margin: 15px;	/* Site margins */
 }
+
+
 header {
 	border-bottom: 1px solid #ccc;
 }
@@ -148,9 +150,42 @@ td img{
 	margin-left: auto;
 	margin-right: auto;
 }
+
+/*
 .dropbtn{
 	display: none;
 }
+*/
+	.dropbtn {
+	  display: inline-block;
+    color: white;
+    border: none;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block; 
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255,255,255);
+    min-width: 150px; 
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+	  
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 0px 12px 12px;
+    text-decoration: none;
+    display: inline-block;
+	  
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
 
 /** Tablet **/
 @media screen and (min-width: 576px) {
@@ -321,12 +356,5 @@ td img{
   .dropdown:hover .dropdown-content {
     display: block;
   }
-	.logo-container{
-		width: 150px;
-		display: inline-block;
-	}
-	.logo-container img{
-		display: block;
-		margin: auto;
-	}
+	
 }
