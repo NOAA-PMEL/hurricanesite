@@ -11,7 +11,7 @@
 <!-- TemplateEndEditable -->
 <link rel="icon" href="../favicon-32.png" sizes="32x32">
 <link rel="icon" href="../favicon-128.png" sizes="128x128">
-<link rel="icon" href="../favicon-192.png" sizes="192x192">
+<link rel="icon" href="../favicon-192.png" sizes="192x192">  
 <link rel="apple-touch-icon" href="../favicon-180.png" sizes="180x180">
 <link rel="preconnect" href="https://fonts.gstatic.com"> 
 <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
 </head>
  
 <body>
-<header><a class="skip-link" href="#main-content">Skip to content</a>
+<header><a class="skip-link" href="#main-content">Skip to content</a> 
 	<div id="header-content" class="clearfix">
 		<div class="pmel-logo"><a href="https://www.pmel.noaa.gov/" target="_blank"><img src="../images/PMEL_logo.png" alt="PMEL logo"/></a></div>
 		<div class="aoml-logo"><a href="https://www.aoml.noaa.gov/" target="_blank"><img src="../images/AOML_Logo.png" alt="AOML logo"/></a></div>
@@ -28,15 +28,25 @@
 <nav>
 	<div id="nav-content"><a href="../index.html">Home</a> 
 		<div class="dropdown" > <a class="dropbtn" >Missions</a>
-      <div class="dropdown-content">
+      <div id="dropdown-content">
        <a  href="../2022/index.html">2022</a>
           <a href="../2022/mission-blog-2022.html">2022 Blog</a>
         <a href="../2021/index.html">2021</a>
           <a href="../2021/mission-blog-2021.html">2021 Blog</a>     
       </div>
 			</div>   
-			
-		<a href="https://data.pmel.noaa.gov/pmel/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=Saildrone+Hurricane+Monitoring+2021+NRT+data" target="_blank">Data</a> <a href="../publications.html">Publications</a>
+		<div class="for-mobile"><a href="../publications.html">Publications</a></div>
+		<div class="newline"><br></div>
+			<div class="dropdown"><a class="dropbtn">Data</a> 
+				<div id="dropdown-content2">
+					<a href="https://data.pmel.noaa.gov/generic/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=Saildrone+Atlantic+2022+Hurricane+Monitoring" target="_blank">2022 Data</a>
+					<a href="https://data.pmel.noaa.gov/pmel/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=Saildrone+Hurricane+Monitoring+2021+NRT+data" target="_blank">2021 Data</a> 
+					
+				</div> 
+		</div>
+		<div class="for-pc"><a href="../publications.html">Publications</a></div>
+		
+		
 	</div> 
 </nav>
 <!-- TemplateBeginEditable name="MainContent" -->
