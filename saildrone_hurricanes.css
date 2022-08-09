@@ -208,10 +208,23 @@ td img{
 .for-mobile{
 	display: inline-block;
 }
+.for-phone{
+	display: inline-block;
+}
 
 .for-pc{
 	display: none;
 }
+
+.animation{
+	margin: auto;
+}
+
+.info{
+	width: 85%;
+	margin: auto;
+}
+
 
 /** Tablet **/
 @media screen and (min-width: 576px) {
@@ -310,8 +323,11 @@ td img{
 	padding: 14px 10px;
 }
 	video{
-		width: 75%;
+		width: 85%;
 	}
+	.for-phone{
+	display: none;
+}
 	
 	
 }
@@ -370,7 +386,7 @@ td img{
     display: none;
     position: absolute;
     background-color: rgb(255,255,255);
-    min-width: 160px; 
+    min-width: 175px; 
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 	  
@@ -413,5 +429,8 @@ td img{
 	}
 	.for-pc{
 		display: inline-block;
+	}
+	.hurricane-name{
+		padding-top: 15px;
 	}
 }
